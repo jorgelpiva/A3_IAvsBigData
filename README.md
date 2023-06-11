@@ -118,7 +118,7 @@ Ao mesmo tempo que mostramos a complexidade de ter que trabalhar com grandes vol
 <p>Então foram identificados os outliers através de um box-plot e pareciam ser muitos</p>
 <img src = 'img/boxplot.png'> 
 <p>Para se ter uma idéia esse deveria ser o formato de um boxplot normal</p>
-<img src = 'img/boxplotExplicacao.png'> 
+<img src = 'img/boxplotExplica.png'> 
 <p>Então plotamos um scatter plot para entender melhor esses outliers, lembrando que a variável step representa uma série temporal</p>
 <p>Este gráfico é o centro da análise, nele é possível perceber diversas situações</p>
 <p>Primeramente temos uma grande sazonalidade e apenas um outlier, mas os valores dessa sazonalidade são muito superiores ao 3 quartil, outra coisa impactante é que nenhum desses valores maiores são fraudulentos, os valores fraudulentos se mantém distribuídos em diversas faixas de valores e sempre iguais ou inferiores a 10.000.000</p>

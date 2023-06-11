@@ -92,19 +92,41 @@ Ao mesmo tempo que mostramos a complexidade de ter que trabalhar com grandes vol
 <p>Primeiramente verificamos que não haviam valores nulos</p>
 <img src = 'img/isna.png'>
 
-<p>Porém, percebemos que só haviam 3 variáveis de texto e só uma era categórica, que é a type, o restante eram os códigos dos clientes de origem e destino, então criamos algumas variáveis categóricas, uma faixa com o valor da transação, um prefixo para o nameOrig e um prefixo para o nameDest</p>
+<p>Porém, percebemos que só haviam 3 variáveis de texto e só uma era categórica, que é a type, o restante eram os códigos dos clientes de origem e destino, então criamos algumas variáveis categóricas, uma faixa com o valor da transação, um prefixo para o nameOrig e um prefixo para o nameDest</p> 
 
 <p>Descobrimos que existiam 2 prefixos o C e o M para o nameDest e o M era praticamente um terço das transações, porém, não havia nenhuma fraude nos clientes de prefixo M</p> 
 <img src = 'img/prefixopizza.png'> 
+<p>Porém, não haviam fraudes de clientes com prefixo M</p>
 
+<p>As faixas de valores foram criadas da seguinte forma:</p>
 
-<p>Percebemos que os valores de fraudes estavam distribuídos em todas as faixas de valores, criamos as faixas de valore</p>
+<p>a primeira faixa vai de 0 a 100.000</p>
+<p>a segunda faixa vai de 100.000 a 500.000</p>
+<p>a terceira faixa vai de 500.000 a 1.000.000</p>
+<p>a quarta faixa vai de 1.000.000 a 10.000.000</p>
+<p>a quinta faixa são valores maiores que 10.000.000</p>
 
+<p>Percebemos que os valores de fraudes estavam distribuídos em todas as faixas de valores que criamos</p>
+<img src = 'img/distribuicaoDasTransacoesPorFaixa.png'> 
+<p>Porém, essa ditribuição mais organizada não ocorria nas transações não fraudulentas.</p>
+<img src = 'img/distribuicaoDasTransacoesPorFaixaN.png'> 
 
-
-
-<img src = 'img/scatterPlotOutlier.png'>
-
+<p>Também descobrimos que o percentual de transações fraudulentas era muito pequeno</p> 
+<img src = 'img/percFraude.png'> 
+<p>E só ocorreram em dois tipos de transações</p> 
+<img src = 'img/tiposTransacoesFraudulentas.png'> 
+<p>Então foram identificados os outliers através de um box-plot e pareciam ser muitos</p>
+<img src = 'img/boxplot.png'> 
+<p>Para se ter uma idéia esse deveria ser o formato de um boxplot normal</p>
+<img src = 'img/boxplotExplicacao.png'> 
+<p>Então plotamos um scatter plot para entender melhor esses outliers, lembrando que a variável step representa uma série temporal</p>
+<p>Este gráfico é o centro da análise, nele é possível perceber diversas situações</p>
+<p>Primeramente temos uma grande sazonalidade e apenas um outlier, mas os valores dessa sazonalidade são muito superiores ao 3 quartil, outra coisa impactante é que nenhum desses valores maiores são fraudulentos, os valores fraudulentos se mantém distribuídos em diversas faixas de valores e sempre iguais ou inferiores a 10.000.000</p>
+<img src = 'img/scatterPlotOutlier.png'> 
+<p>A Série temporal em si dos valores gerais é bem irregular conseguimos ver a distribuição de todas as transações.
+<img src = 'img/distribuicaoDasTransacoes.png'> 
+<p>Mas parece que este gráfico foi pintado com uma caneta e uma régua na faixa dos 10.000.000 em alguns casos, existe uma regularidade, se plotarmos o gráfico sem as fraudes vemos que não há essa régua como com o dataset geral.
+<img src = 'img/distribuicaoTranscoesOk.png'> 
 Apresentação dos Resultados
 
 Discussão dos Padrões e Tendências

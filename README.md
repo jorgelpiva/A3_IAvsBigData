@@ -75,7 +75,7 @@ Ao mesmo tempo que mostramos a complexidade de ter que trabalhar com grandes vol
 
 <h3>Análise e Consolidação<h3> 
 
-O dataset possuí as seguintes variáveis:
+<p>O dataset possuí as seguintes variáveis:</p>
 
 <p><b>step</b> - mapeia uma unidade de tempo no mundo real. Neste caso, 1 passo é 1 hora de tempo. Total de etapas 744 (simulação de 30 dias).</p>
 <p><b>type</b>- CASH-IN, CASH-OUT, DEBIT, PAYMENT e TRANSFER.</p>

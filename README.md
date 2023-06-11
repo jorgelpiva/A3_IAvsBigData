@@ -87,7 +87,19 @@ Ao mesmo tempo que mostramos a complexidade de ter que trabalhar com grandes vol
 <p><b>oldbalanceDest</b> - destinatário do saldo inicial antes da transação. Observe que não há informações para clientes que começam com M (Comerciantes).</p>
 <p><b>newbalanceDest</b> - novo destinatário do saldo após a transação. Observe que não há informações para clientes que começam com M (Comerciantes).</p>
 <p><b>isFraud</b> - São as transações feitas pelos agentes fraudulentos dentro da simulação. Neste conjunto de dados específico, o comportamento fraudulento dos agentes visa lucrar tomando controle ou contas de clientes e tentando esvaziar os fundos transferindo para outra conta e depois sacando do sistema.</p>
-<p><b>isFlaggedFraud</b> - O modelo de negócios visa controlar transferências massivas de uma conta para outra e sinaliza tentativas ilegais. É uma flag criada pelo próprio modelo.</p>
+<p><b>isFlaggedFraud</b> - O modelo de negócios visa controlar transferências massivas de uma conta para outra e sinaliza tentativas ilegais. É uma flag criada pelo próprio modelo.</p> 
+
+<p>Primeiramente verificamos que não haviam valores nulos</p>
+<img src = 'img/isna.png'>
+
+<p>Porém, percebemos que só haviam 3 variáveis de texto e só uma era categórica, que é a type, o restante eram os códigos dos clientes de origem e destino, então criamos algumas variáveis categóricas, uma faixa com o valor da transação, um prefixo para o nameOrig e um prefixo para o nameDest</p>
+
+<p>Descobrimos que existiam 2 prefixos o C e o M para o nameDest e o M era praticamente um terço das transações, porém, não havia nenhuma fraude nos clientes de prefixo M</p> 
+<img src = 'img/prefixopizza.png'> 
+
+
+<p>Percebemos que os valores de fraudes estavam distribuídos em todas as faixas de valores, criamos as faixas de valore</p>
+
 
 
 

@@ -73,7 +73,7 @@ Ao mesmo tempo que mostramos a complexidade de ter que trabalhar com grandes vol
 <p>Comparação de Modelos: Comparamos os resultados dos diferentes modelos e analisamos suas performances. Com base nas métricas de avaliação e nas necessidades específicas do problema, podemos identificar o modelo mais adequado para a tarefa de prever transações fraudulentas.</p>
 
 
-<h3>Análise e Consolidação<h3> 
+<h3>Análise e Consolidação</h3> 
 
 <p>O dataset possuí as seguintes variáveis:</p>
 

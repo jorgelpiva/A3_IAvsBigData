@@ -10,6 +10,7 @@ O trabalho consiste em escolher um dataset e conduzir uma análise exploratória
 
 <p>Estamos cursando também a UC de Inteligência Artificial, apesar de não ter sido um requisito, utilizamos o mesmo dataset da análise exploratória desta UC para rodar os algoritmos de machine learning solicitados na UC de Inteligência Artificial esta que tem um relatório apartado em PDF neste repositório.</p>
 
+<p>Este read-me se dedica ao relatório final, a análise exploratória completa e base para este documento está no jupyter notebook neste repositório analise_exploratória.ipynb</p>
 <p>Então para trazer um dataset que fosse útil para as duas UCs procuramos um dataset que tivesse dados rotulados, nossos algoritmos de IA são de aprendizado supervisionado, ou seja, precisamos dividir os dados em dados de treino e teste e fazer o treinamento dos mesmos já com os valores rotulados, posteriormente utilizaremos os dados de teste para tentar prever a variável alvo, mas antes de fazer os algoritmos de machine learning iremos explorar a base de dados, tentar entender tendências e extrair informações úteis sobre os dados.</p>
 
 <p>Como estamos na UC de Análise de Dados e Big Data um outro requisito que levamos em consideração foi referente ao tamanho do dataset, optamos por um dataset longo que tivesse mais de 1048576 ou seja, é um dataset que não poderia ser aberto com Microsoft Excel, desta forma, mostramos a complexidade de trabalhar com grande volume de dados e também a necessidade do profissional moderno de aprender novas ferramentas, se estamos na era dos dados, se os dados são o novo petróleo como se limitar a 1 milhão de linhas? 
@@ -131,15 +132,12 @@ Ao mesmo tempo que mostramos a complexidade de ter que trabalhar com grandes vol
 <img src = 'img/distribuicaoFraudes.png'> 
 <p>Regularidade é a Marca das transações fraudulentas e sazonalidade a marca dos dados normais, fizemos um histograma para tentar melhorar a visualização da série temporal e evidenciar novamente este ponto, aqui plotamos em uma série temporal a quantidade de transações ao longo da série.<p>
 <img src = 'img/histogramaTemporalFraudes.png'> 
-Apresentação dos Resultados
+<p>Depois rodamos os algoritmos de Machine Learning e conseguimos um algoritmo com eficácia de 86% para prever fraudes</p>
+<img src = 'img/resultadosDeML.png'> 
 
-Discussão dos Padrões e Tendências
+<h3>Conclusão</h3> 
 
-Análise de Segmentos ou Subgrupos 
-
-Interpretação dos Resultados 
-
-Limitações e Vieses
-
-Conclusão 
-
+<p>Em tempos de ChatGpt, inteligência artificial entre outras tecnologias, não podemos nos dar ao luxo de não estar em modo de aprendizagem constante, como profissionais, não importa o setor ou área que se trabalhe, dentro da administração, do marketing, finanças não importa, praticamente todas as área de negócios estão fortemente incentivadas a tomar decisões baseadas em dados, o conceito de data driven está cada vez mais popular e empresas que não buscarem trabalhar desta forma estarão fadadas a ficar para trás</p>
+<p>Estamos na era do big data, geramos uma quantidade enorme de dados cada vez mais rápido e não podemos ficar presos à ferramentas de escritório, ferramentas de análise de dados baseadas em linguagem de programação estarão cada vez mais populares, as carreiras ligadas a dados estão em crescente demanda, desta forma, é muito útil que saibamos novas formas de análisel.</p>
+<p>No que tange a condução da exploração deste dataset escolhido manipulamos uma massa de dados com mais de 6 milhões de linhas e 11 colunas e posteriormente criamos mais 3 colunas para fazer a exploração, o que chamamos de enriquecimento dos dados também, conseguimos entender diversos padrões, como as fraudes não ocorreram em clientes com prefixos M, só ocorreram em dois dos cinco tipos de transações, sempre abaixo de 10 milhões, em praticamente todos os períodos de forma regular, essas informações são importantes para o monitoramento, mas quando juntamos o machine learming à esses dados e botamos a máquina pra trabalhar conseguimos desenvolver um modelo que pode prever a cada 100 transações fraudulentas ele identifica 86, e poderia aumentar essa acurácia alterando parâmetro ou recebendo mais informações "variáveis" da área de negócio.</p>
+<p>Este é um dilema do mundo moderno, muitos acham que a IA irá acabar com muitos empregos e vai, mas ela vai gerar novos e com ela será possível potencializar resultados, por mais que a visualização nos tenha dado insights importântíssimos, foi varrendo a base de dados e simulando diversos algoritmos que poderíamos criar a bala de prata contra esses fraudadores, potencializou sua eficiência e com este modelo pronto agora poderíamos deixar ele plugado ao sistema, para evitar que essas fraudes ocorram tornando o sistema normal em um sistema especilista que também vimos nesta UC de Análise de dados e Big Data.</p>

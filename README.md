@@ -123,10 +123,14 @@ Ao mesmo tempo que mostramos a complexidade de ter que trabalhar com grandes vol
 <p>Este gráfico é o centro da análise, nele é possível perceber diversas situações</p>
 <p>Primeramente temos uma grande sazonalidade e apenas um outlier, mas os valores dessa sazonalidade são muito superiores ao 3 quartil, outra coisa impactante é que nenhum desses valores maiores são fraudulentos, os valores fraudulentos se mantém distribuídos em diversas faixas de valores e sempre iguais ou inferiores a 10.000.000</p>
 <img src = 'img/scatterPlotOutlier.png'> 
-<p>A Série temporal em si dos valores gerais é bem irregular conseguimos ver a distribuição de todas as transações.
+<p>A Série temporal dos valores gerais é bem irregular conseguimos ver a distribuição de todas as transações.
 <img src = 'img/distribuicaoDasTransacoes.png'> 
 <p>Mas parece que este gráfico foi pintado com uma caneta e uma régua na faixa dos 10.000.000 em alguns casos, existe uma regularidade, se plotarmos o gráfico sem as fraudes vemos que não há essa régua como com o dataset geral.
 <img src = 'img/distribuicaoTranscoesOk.png'> 
+<p>Então plotamos uma série temporal só com os valores fraudulentos e a regularidade se mostra novamente, tudo isso foi possível por causa do primeiro scatter plot</p>
+<img src = 'img/distribuicaoFraudes.png'> 
+<p>Regularidade é a Marca das transações fraudulentas e sazonalidade a marca dos dados normais, fizemos um histograma para tentar melhorar a visualização da série temporal e evidenciar novamente este ponto, aqui plotamos em uma série temporal a quantidade de transações ao longo da série.<p>
+<img src = 'img/histogramaTemporalFraudes.png'> 
 Apresentação dos Resultados
 
 Discussão dos Padrões e Tendências

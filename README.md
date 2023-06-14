@@ -57,7 +57,7 @@ Ao mesmo tempo que mostramos a complexidade de ter que trabalhar com grandes vol
 
 <h3>Objetivos </h3>
 
-<p>Conduzir uma análise exploratória e entender a hitória que estes dados nos contam e no final criar um algoritmo com uma acuracidade razoável para prever fraudes, iremos testar diversos algoritmos e entender qual que é mais efetivo para este contexto.</p>
+<p>Conduzir uma análise exploratória e entender a história que estes dados nos contam e no final criar um algoritmo com uma acuracidade razoável para prever fraudes, iremos testar diversos algoritmos e entender qual que é mais efetivo para este contexto.</p>
 <p>Também iremos explorar os dados, verificar se existem outliers e buscar algum padrão nas transações sejam as normais ou as fraudulentas.</p>
 
 <h3>Metodologia</h3> 
